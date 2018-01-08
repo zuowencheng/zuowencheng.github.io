@@ -75,7 +75,7 @@
 
 
 
-  <meta name="keywords" content="hexo,commands," />
+  <meta name="keywords" content="supervisor," />
 
 
 
@@ -86,18 +86,18 @@
 
 
 
-<meta name="description" content="安装123npm install hexo -g #安装  npm update hexo -g #升级  hexo init #初始化 简写12345hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章hexo p == hexo publishhexo g == hexo generate#生成hexo s == hexo ser">
-<meta name="keywords" content="hexo,commands">
+<meta name="description" content="Supervisor简介是一个用Python写的进程管理工具，可以很方便的用来启动、重启、关闭进程（不仅仅是 Python 进程）。除了对单个进程的控制，还可以同时启动、关闭多个进程，比如很不幸的服务器出问题导致所有应用程序都被杀死，此时可以用 supervisor 同时启动所有应用程序而不是一个一个地敲命令启动。 supervisor安装Supervisor 可以运行在 Linux、Mac OS">
+<meta name="keywords" content="supervisor">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Hexo常用命令">
-<meta property="og:url" content="http://zuowencheng.cn/2017/12/31/hexo 常用命令/index.html">
+<meta property="og:title" content="使用 supervisor 管理进程">
+<meta property="og:url" content="http://zuowencheng.cn/2018/01/08/使用 supervisor 管理进程/index.html">
 <meta property="og:site_name" content="Zuowencheng&#39;s Blogs">
-<meta property="og:description" content="安装123npm install hexo -g #安装  npm update hexo -g #升级  hexo init #初始化 简写12345hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章hexo p == hexo publishhexo g == hexo generate#生成hexo s == hexo ser">
+<meta property="og:description" content="Supervisor简介是一个用Python写的进程管理工具，可以很方便的用来启动、重启、关闭进程（不仅仅是 Python 进程）。除了对单个进程的控制，还可以同时启动、关闭多个进程，比如很不幸的服务器出问题导致所有应用程序都被杀死，此时可以用 supervisor 同时启动所有应用程序而不是一个一个地敲命令启动。 supervisor安装Supervisor 可以运行在 Linux、Mac OS">
 <meta property="og:locale" content="zh-Hans">
-<meta property="og:updated_time" content="2018-01-01T08:14:24.106Z">
+<meta property="og:updated_time" content="2018-01-08T16:34:18.885Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Hexo常用命令">
-<meta name="twitter:description" content="安装123npm install hexo -g #安装  npm update hexo -g #升级  hexo init #初始化 简写12345hexo n &amp;quot;我的博客&amp;quot; == hexo new &amp;quot;我的博客&amp;quot; #新建文章hexo p == hexo publishhexo g == hexo generate#生成hexo s == hexo ser">
+<meta name="twitter:title" content="使用 supervisor 管理进程">
+<meta name="twitter:description" content="Supervisor简介是一个用Python写的进程管理工具，可以很方便的用来启动、重启、关闭进程（不仅仅是 Python 进程）。除了对单个进程的控制，还可以同时启动、关闭多个进程，比如很不幸的服务器出问题导致所有应用程序都被杀死，此时可以用 supervisor 同时启动所有应用程序而不是一个一个地敲命令启动。 supervisor安装Supervisor 可以运行在 Linux、Mac OS">
 
 
 
@@ -127,13 +127,13 @@
 
 
 
-  <link rel="canonical" href="http://zuowencheng.cn/2017/12/31/hexo 常用命令/"/>
+  <link rel="canonical" href="http://zuowencheng.cn/2018/01/08/使用 supervisor 管理进程/"/>
 
 
 
 
 
-  <title>Hexo常用命令 | Zuowencheng's Blogs</title>
+  <title>使用 supervisor 管理进程 | Zuowencheng's Blogs</title>
   
 
 
@@ -279,7 +279,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://zuowencheng.cn/2017/12/31/hexo 常用命令/">
+    <link itemprop="mainEntityOfPage" href="http://zuowencheng.cn/2018/01/08/使用 supervisor 管理进程/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Eric Zuo">
@@ -296,7 +296,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Hexo常用命令</h1>
+          <h1 class="post-title" itemprop="name headline">使用 supervisor 管理进程</h1>
         
 
         <div class="post-meta">
@@ -308,8 +308,8 @@
               
                 <span class="post-meta-item-text">发表于</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2017-12-31T00:00:00+08:00">
-                2017-12-31
+              <time title="创建于" itemprop="dateCreated datePublished" datetime="2018-01-08T23:46:18+08:00">
+                2018-01-08
               </time>
             
 
@@ -331,8 +331,8 @@
               
               
                 <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
-                  <a href="/categories/My-Code-hexo/" itemprop="url" rel="index">
-                    <span itemprop="name">My Code-hexo</span>
+                  <a href="/categories/My-Code-supervisor/" itemprop="url" rel="index">
+                    <span itemprop="name">My Code-supervisor</span>
                   </a>
                 </span>
 
@@ -362,7 +362,7 @@
                   <span class="post-meta-item-text">字数统计&#58;</span>
                 
                 <span title="字数统计">
-                  250
+                  1,832
                 </span>
               
 
@@ -387,10 +387,38 @@
       
 
       
-        <h2 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">npm install hexo -g #安装  </span><br><span class="line">npm update hexo -g #升级  </span><br><span class="line">hexo init #初始化</span><br></pre></td></tr></table></figure>
-<h2 id="简写"><a href="#简写" class="headerlink" title="简写"></a>简写</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">hexo n &quot;我的博客&quot; == hexo new &quot;我的博客&quot; #新建文章</span><br><span class="line">hexo p == hexo publish</span><br><span class="line">hexo g == hexo generate#生成</span><br><span class="line">hexo s == hexo server #启动服务预览</span><br><span class="line">hexo d == hexo deploy#部署</span><br></pre></td></tr></table></figure>
-<h2 id="服务器"><a href="#服务器" class="headerlink" title="服务器"></a>服务器</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line">hexo server #Hexo 会监视文件变动并自动更新，您无须重启服务器。</span><br><span class="line">hexo server -s #静态模式</span><br><span class="line">hexo server -p 5000 #更改端口</span><br><span class="line">hexo server -i 192.168.1.1 #自定义 IP</span><br><span class="line"></span><br><span class="line">hexo clean #清除缓存 网页正常情况下可以忽略此条命令</span><br><span class="line">hexo g #生成静态网页</span><br><span class="line">hexo d #开始部署</span><br></pre></td></tr></table></figure>
-<h2 id="新建模板"><a href="#新建模板" class="headerlink" title="新建模板"></a>新建模板</h2><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">hexo new &quot;postName&quot; #新建文章</span><br><span class="line">hexo new page &quot;pageName&quot; #新建页面</span><br><span class="line">hexo generate #生成静态页面至public目录</span><br><span class="line">hexo server #开启预览访问端口（默认端口4000，&apos;ctrl + c&apos;关闭server）</span><br><span class="line">hexo deploy #将.deploy目录部署到GitHub</span><br><span class="line"></span><br><span class="line">hexo new [layout] &lt;title&gt;</span><br><span class="line">hexo new photo &quot;My Gallery&quot;</span><br><span class="line">hexo new &quot;Hello World&quot; --lang tw</span><br></pre></td></tr></table></figure>
+        <h2 id="Supervisor简介"><a href="#Supervisor简介" class="headerlink" title="Supervisor简介"></a><a href="http://supervisord.org" target="_blank" rel="noopener">Supervisor简介</a></h2><p>是一个用Python写的进程管理工具，可以很方便的用来启动、重启、关闭进程（不仅仅是 Python 进程）。除了对单个进程的控制，还可以同时启动、关闭多个进程，比如很不幸的服务器出问题导致所有应用程序都被杀死，此时可以用 supervisor 同时启动所有应用程序而不是一个一个地敲命令启动。</p>
+<h2 id="supervisor安装"><a href="#supervisor安装" class="headerlink" title="supervisor安装"></a>supervisor安装</h2><p>Supervisor 可以运行在 Linux、Mac OS X 上。如前所述，supervisor 是 Python 编写的，所以安装起来也很方便，可以直接用 pip :</p>
+<p><code>sudo pip install supervisor</code></p>
+<p>如果是 Ubuntu 系统，还可以使用 apt-get 安装。</p>
+<h2 id="supervisord配置"><a href="#supervisord配置" class="headerlink" title="supervisord配置"></a>supervisord配置</h2><p>Supervisor 相当强大，提供了很丰富的功能，不过我们可能只需要用到其中一小部分。安装完成之后，可以编写配置文件，来满足自己的需求。为了方便，我们把配置分成两部分：supervisord（supervisor 是一个 C/S 模型的程序，这是 server 端，对应的有 client 端：supervisorctl）和应用程序（即我们要管理的程序）。</p>
+<p>首先来看 supervisord 的配置文件。安装完 supervisor 之后，可以运行echo_supervisord_conf 命令输出默认的配置项，也可以重定向到一个配置文件里：</p>
+<p><code>echo_supervisord_conf &gt; /etc/supervisord/supervisord.conf</code></p>
+<p>去除里面大部分注释和“不相关”的部分，我们可以先看这些配置：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br></pre></td><td class="code"><pre><span class="line">[unix_http_server]</span><br><span class="line">file=/tmp/supervisor.sock   ; UNIX socket 文件，supervisorctl 会使用</span><br><span class="line">;chmod=0700                 ; socket 文件的 mode，默认是 0700</span><br><span class="line">;chown=nobody:nogroup       ; socket 文件的 owner，格式： uid:gid</span><br><span class="line"></span><br><span class="line">;[inet_http_server]         ; HTTP 服务器，提供 web 管理界面</span><br><span class="line">;port=127.0.0.1:9001        ; Web 管理后台运行的 IP 和端口，如果开放到公网，需要注意安全性</span><br><span class="line">;username=user              ; 登录管理后台的用户名</span><br><span class="line">;password=123               ; 登录管理后台的密码</span><br><span class="line"></span><br><span class="line">[supervisord]</span><br><span class="line">logfile=/tmp/supervisord.log ; 日志文件，默认是 <span class="variable">$CWD</span>/supervisord.log</span><br><span class="line">logfile_maxbytes=50MB        ; 日志文件大小，超出会 rotate，默认 50MB</span><br><span class="line">logfile_backups=10           ; 日志文件保留备份数量默认 10</span><br><span class="line">loglevel=info                ; 日志级别，默认 info，其它: debug,warn,trace</span><br><span class="line">pidfile=/tmp/supervisord.pid ; pid 文件</span><br><span class="line">nodaemon=<span class="literal">false</span>               ; 是否在前台启动，默认是 <span class="literal">false</span>，即以 daemon 的方式启动</span><br><span class="line">minfds=1024                  ; 可以打开的文件描述符的最小值，默认 1024</span><br><span class="line">minprocs=200                 ; 可以打开的进程数的最小值，默认 200</span><br><span class="line"></span><br><span class="line">; the below section must remain <span class="keyword">in</span> the config file <span class="keyword">for</span> RPC</span><br><span class="line">; (supervisorctl/web interface) to work, additional interfaces may be</span><br><span class="line">; added by defining them <span class="keyword">in</span> separate rpcinterface: sections</span><br><span class="line">[rpcinterface:supervisor]</span><br><span class="line">supervisor.rpcinterface_factory = supervisor.rpcinterface:make_main_rpcinterface</span><br><span class="line"></span><br><span class="line">[supervisorctl]</span><br><span class="line">serverurl=unix:///tmp/supervisor.sock ; 通过 UNIX socket 连接 supervisord，路径与 unix_http_server 部分的 file 一致</span><br><span class="line">;serverurl=http://127.0.0.1:9001 ; 通过 HTTP 的方式连接 supervisord</span><br><span class="line"></span><br><span class="line">; 包含其他的配置文件</span><br><span class="line">[include]</span><br><span class="line">files = relative/directory/*.ini    ; 可以是 *.conf 或 *.ini</span><br></pre></td></tr></table></figure>
+<p>我们把上面这部分配置保存到 /etc/supervisord.conf（或其他任意有权限访问的文件），然后启动 supervisord<br>通过 -c 选项指定配置文件路径，如果不指定会按照这个顺序查找配置文件：<br>$CWD/supervisord.conf,<br>$CWD/etc/supervisord.conf,<br>/etc/supervisord.conf</p>
+<p><code>supervisord -c /etc/supervisord.conf</code></p>
+<p>查看 supervisord 是否在运行：</p>
+<p><code>ps aux | grep supervisord</code></p>
+<h2 id="program配置"><a href="#program配置" class="headerlink" title="program配置"></a>program配置</h2><p>上面我们已经把 supervisrod 运行起来了，现在可以添加我们要管理的进程的配置文件。这些配置可以都写到 supervisord.conf 文件里，如果应用程序很多，最好通过 include 的方式把不同的程序（组）写到不同的配置文件里。</p>
+<p>为了举例，我们新建一个目录 /etc/supervisor/ 用于存放这些配置文件，相应的，把<br>/etc/supervisord.conf 里 include 部分的的配置修改一下：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[include]</span><br><span class="line">files = /etc/supervisor/*.conf</span><br></pre></td></tr></table></figure>
+<p>假设有个用 Flask 开发的用户系统 usercenter, 生产环境使用 gunicorn 运行。项目代码位于 /home/leon/projects/usercenter，WSGI 对象位于 wsgi.py。在命令行启动的方式是这样的：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line"><span class="built_in">cd</span> /home/leon/projects/usercenter</span><br><span class="line">gunicorn -w 8 -b 0.0.0.0:17510 wsgi:app</span><br></pre></td></tr></table></figure></p>
+<p>对应的配置文件可能是：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">[program:usercenter]</span><br><span class="line">directory = /home/leon/projects/usercenter ; 程序的启动目录</span><br><span class="line"><span class="built_in">command</span> = gunicorn -w 8 -b 0.0.0.0:17510 wsgi:app  ; 启动命令</span><br><span class="line">autostart = <span class="literal">true</span>     ; 在 supervisord 启动的时候也自动启动</span><br><span class="line">startsecs = 5        ; 启动 5 秒后没有异常退出，就当作已经正常启动了</span><br><span class="line">autorestart = <span class="literal">true</span>   ; 程序异常退出后自动重启</span><br><span class="line">startretries = 3     ; 启动失败自动重试次数，默认是 3</span><br><span class="line">user = leon          ; 用哪个用户启动</span><br><span class="line">redirect_stderr = <span class="literal">true</span>  ; 把 stderr 重定向到 stdout，默认 <span class="literal">false</span></span><br><span class="line">stdout_logfile_maxbytes = 20MB  ; stdout 日志文件大小，默认 50MB</span><br><span class="line">stdout_logfile_backups = 20     ; stdout 日志文件备份数</span><br><span class="line">; stdout 日志文件，需要注意当指定目录不存在时无法正常启动，所以需要手动创建目录（supervisord 会自动创建日志文件）</span><br><span class="line">stdout_logfile = /data/logs/usercenter_stdout.log</span><br></pre></td></tr></table></figure></p>
+<p><strong>其中 [program:usercenter] 中的 usercenter 是应用程序的唯一标识，不能重复。对该程序的所有操作（start, restart 等）都通过名字来实现。</strong></p>
+<h2 id="Tips-1-Python-环境"><a href="#Tips-1-Python-环境" class="headerlink" title="Tips 1: Python 环境"></a>Tips 1: Python 环境</h2><p>有两种方式指定程序使用的 Python 环境：</p>
+<p>1.command 使用绝对路径。假设使用 pyenv 来管理 Python 环境，上面例子中的 gunicorn 路径可以替换为 /home/leon/.pyenv/versions/usercenter/bin/gunicorn. 这种方式一目了然，推荐。<br>2.通过 environment 配置 PYTHONPATH. environment=PYTHONPATH=$PYTHONPATH:/home/leon/.pyenv/versions/usercenter/bin/. environment 这个配置项非常有用，可以用来给程序传入环境变量。</p>
+<h2 id="Tips-2-后台进程"><a href="#Tips-2-后台进程" class="headerlink" title="Tips 2: 后台进程"></a>Tips 2: 后台进程</h2><p>Supervisor只能管理在前台运行的程序，所以如果应用程序有后台运行的选项，需要关闭。</p>
+<h2 id="Tips-3-子进程"><a href="#Tips-3-子进程" class="headerlink" title="Tips 3: 子进程"></a>Tips 3: 子进程</h2><p>有时候用 Supervisor 托管的程序还会有子进程（如 Tornado），如果只杀死主进程，子进程就可能变成孤儿进程。通过这两项配置来确保所有子进程都能正确停止：<br><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">stopasgroup=<span class="literal">true</span></span><br><span class="line">killasgroup=<span class="literal">true</span></span><br></pre></td></tr></table></figure></p>
+<h2 id="使用-supervisorctl"><a href="#使用-supervisorctl" class="headerlink" title="使用 supervisorctl"></a>使用 supervisorctl</h2><p>Supervisorctl 是 supervisord 的一个命令行客户端工具，启动时需要指定与 supervisord 使用同一份配置文件，否则与 supervisord 一样按照顺序查找配置文件。</p>
+<p><code>supervisorctl -c /etc/supervisord.conf</code><br>上面这个命令会进入 supervisorctl 的 shell 界面，然后可以执行不同的命令了：<br><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">&gt; status    # 查看程序状态</span><br><span class="line">&gt; stop usercenter   # 关闭 usercenter 程序</span><br><span class="line">&gt; start usercenter  # 启动 usercenter 程序</span><br><span class="line">&gt; restart usercenter    # 重启 usercenter 程序</span><br><span class="line">&gt; reread    ＃ 读取有更新（增加）的配置文件，不会启动新添加的程序</span><br><span class="line">&gt; update    ＃ 重启配置文件修改过的程序</span><br></pre></td></tr></table></figure></p>
+<p>上面这些命令都有相应的输出，除了进入 supervisorctl 的 shell 界面，也可以直接在 bash 终端运行：</p>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line">$ supervisorctl status</span><br><span class="line">$ supervisorctl stop usercenter</span><br><span class="line">$ supervisorctl start usercenter</span><br><span class="line">$ supervisorctl restart usercenter</span><br><span class="line">$ supervisorctl reread</span><br><span class="line">$ supervisorctl update</span><br></pre></td></tr></table></figure>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>除了 supervisorctl 之外，还可以配置 supervisrod 启动 web 管理界面，这个 web 后台使用 Basic Auth 的方式进行身份认证。</p>
+<p>除了单个进程的控制，还可以配置 group，进行分组管理。</p>
+<p>经常查看日志文件，包括 supervisord 的日志和各个 pragram 的日志文件，程序 crash 或抛出异常的信息一半会输出到 stderr，可以查看相应的日志文件来查找问题。</p>
+<p>Supervisor 有很丰富的功能，还有其他很多项配置，可以在官方文档获取更多信息：<br><a href="http://supervisord.org/index.html" target="_blank" rel="noopener">http://supervisord.org/index.html</a></p>
+
       
     </div>
     
@@ -407,9 +435,7 @@
       
         <div class="post-tags">
           
-            <a href="/tags/hexo/" rel="tag"><i class="fa fa-tag"></i> hexo</a>
-          
-            <a href="/tags/commands/" rel="tag"><i class="fa fa-tag"></i> commands</a>
+            <a href="/tags/supervisor/" rel="tag"><i class="fa fa-tag"></i> supervisor</a>
           
         </div>
       
@@ -422,15 +448,15 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
+              <a href="/2018/01/06/2018书单/" rel="next" title="2018书单">
+                <i class="fa fa-chevron-left"></i> 2018书单
+              </a>
+            
           </div>
 
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2017/12/31/hexo GitHub Ribbons/" rel="prev" title="hexo GitHub Ribbons">
-                hexo GitHub Ribbons <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -627,7 +653,7 @@ var jiathis_config={
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#安装"><span class="nav-number">1.</span> <span class="nav-text">安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#简写"><span class="nav-number">2.</span> <span class="nav-text">简写</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#服务器"><span class="nav-number">3.</span> <span class="nav-text">服务器</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#新建模板"><span class="nav-number">4.</span> <span class="nav-text">新建模板</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#Supervisor简介"><span class="nav-number">1.</span> <span class="nav-text">Supervisor简介</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#supervisor安装"><span class="nav-number">2.</span> <span class="nav-text">supervisor安装</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#supervisord配置"><span class="nav-number">3.</span> <span class="nav-text">supervisord配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#program配置"><span class="nav-number">4.</span> <span class="nav-text">program配置</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips-1-Python-环境"><span class="nav-number">5.</span> <span class="nav-text">Tips 1: Python 环境</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips-2-后台进程"><span class="nav-number">6.</span> <span class="nav-text">Tips 2: 后台进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#Tips-3-子进程"><span class="nav-number">7.</span> <span class="nav-text">Tips 3: 子进程</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#使用-supervisorctl"><span class="nav-number">8.</span> <span class="nav-text">使用 supervisorctl</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它"><span class="nav-number">9.</span> <span class="nav-text">其它</span></a></li></ol></div>
             
 
           </div>
